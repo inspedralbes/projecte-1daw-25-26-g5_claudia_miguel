@@ -17,7 +17,6 @@
      <p class="lead mb-4">Una vegada seleccionis qui ets t'enredigirem a un altre pagina on podras seleccionar el que pots fer</p> 
 </div> 
 </div>
-
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="col-md-6">

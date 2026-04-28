@@ -27,27 +27,32 @@
     <div class="col-md-6">
 
       <div class="d-flex flex-column gap-2">
-            <input type="radio" class="btn-check" name="rol" id="alumne" value="alumne">
-        <label class="btn btn-outline-primary text-start" for="alumne">
-            Alumne / Professor
-        </label>
-        <input type="radio" class="btn-check" name="rol" id="responsable_informatica" value="responsable_informatica">
-        <label class="btn btn-outline-primary text-start" for="responsable_informatica">
-            Responsable de Informatica
-        </label>
-        <input type="radio" class="btn-check" name="rol" id="tecnic" value="tecnic">
-        <label class="btn btn-outline-primary text-start" for="tecnic">
-            Tecnic
-        </label>
-        <input type="radio" class="btn-check" name="rol" id="administrador" value="administrador">
-        <label class="btn btn-outline-primary text-start" for="administrador">
-            administrador
-        </label>
-        </div>
 
-        </div>
+        <a href="formulari_registre_incidencia.html"
+           class="btn btn-outline-primary text-start">
+          Alumne / Professor
+        </a>
+
+        <a href="responsable.html"
+           class="btn btn-outline-primary text-start">
+          Responsable de Informatica
+        </a>
+
+        <a href="tecnic.html"
+           class="btn btn-outline-primary text-start">
+          Tecnic
+        </a>
+
+        <a href="administrador.html"
+           class="btn btn-outline-primary text-start">
+          Administrador
+        </a>
+
+      </div>
+
     </div>
-    </div>
+  </div>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

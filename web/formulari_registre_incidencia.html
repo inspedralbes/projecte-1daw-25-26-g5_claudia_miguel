@@ -15,12 +15,22 @@
   <h1 class="mt-5">Registrar incidència</h1>
   <hr>
 
-  <form action="">
+  <form action="insertar_incidencia.php" method="POST">
     
-    <div class="mt-5">
-    <label for="departament" class="form-label">Introdueix departament:</label>
-    <input type="text" id="departament" name="departament" class="form-control" required>
-     </div>
+    <label for="departament" class="form-label">Selecciona departament:</label>
+    <select name="id_departament" class="form-select" required>
+        <option value="1">Ciències naturals</option>
+        <option value="2">Informàtica</option>
+        <option value="3">Matemàtiques</option>
+        <option value="4">Llengua Catalana</option>
+        <option value="5">Llengua Castellana</option>
+        <option value="6">Ciències Socials</option>
+        <option value="7">Filosofia</option>
+        <option value="8">Tecnologia</option>
+        <option value="9">Educació Física</option>
+        <option value="10">Música</option>
+        <option value="11">Educació Visual i Plàstica</option>
+    </select>
 
     <div class="mt-5">
     <label for="data" class="form-label">Data d'incidència:</label><br>

@@ -1,0 +1,36 @@
+<?php
+$mysqli = include_once "conexio.php";
+
+// 2. Comprobamos que lleguen los datos del formulario
+if (empty($_POST["id_departament"]) || empty($_POST["data"]) || empty($_POST["descripcio"])) {
+    exit("Si us plau, omple tots els camps del formulari.");
+}
+
+// 3. Recogemos los valores
+$id_dep      = $_POST["id_departament"];
+$data_inici  = $_POST["data"];
+$descripcio  = $_POST["descripcio"];
+
+// Valores automáticos (puedes ajustarlos si quieres)
+$prioritat = "Mitja"; 
+$resolta   = 0;
+
+// 4. Preparamos la inserción (siguiendo tu script.sql)
+// Columnas: descripcio, data_inici, prioritat, resolta, id_departament
+$sentencia = $mysqli->prepare(
+    "INSERT INTO INCIDENCIA (descripcio, data_inici, prioritat, resolta, id_departament) VALUES (?, ?, ?, ?, ?)"
+);
+
+// "sssii" -> string, string, string, entero, entero
+$sentencia->bind_param("sssii", $descripcio, $data_inici, $prioritat, $resolta, $id_dep);
+
+// 5. Ejecutamos y comprobamos
+if ($sentencia->execute()) {
+    // Si sale bien, volvemos al inicio con un mensaje de éxito
+    header("Location: index.php?status=success");
+} else {
+    echo "Error al guardar la incidència: " . $mysqli->error;
+}
+
+$sentencia->close();
+?>

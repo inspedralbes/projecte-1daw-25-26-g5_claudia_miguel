@@ -24,22 +24,22 @@
 
       <div class="d-flex flex-column gap-2">
 
-        <a href="formulari_registre_incidencia.html"
+        <a href="u_que_vols_fer.php"
            class="btn btn-outline-primary text-start">
           Alumne / Professor
         </a>
 
-        <a href="responsable.html"
+        <a href="ri_que_vols_fer.php"
            class="btn btn-outline-primary text-start">
           Responsable de Informatica
         </a>
 
-        <a href="tecnic.html"
+        <a href="t_que_vols_fer.php"
            class="btn btn-outline-primary text-start">
           Tecnic
         </a>
 
-        <a href="administrador.html"
+        <a href="a_que_vols_fer.php"
            class="btn btn-outline-primary text-start">
           Administrador
         </a>

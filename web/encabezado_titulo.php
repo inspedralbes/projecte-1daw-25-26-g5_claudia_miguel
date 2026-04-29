@@ -3,7 +3,7 @@
 <nav class="navbar bg-primary" data-bs-theme="dark">
   <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Pagina D'incidencies</span>
+    <span class="navbar-brand mb-0 h1">Pagina d'incidències</span>
   </div>
 </nav>
 </nav>

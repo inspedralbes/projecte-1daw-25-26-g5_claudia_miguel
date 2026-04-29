@@ -10,11 +10,11 @@
 
 <?php include 'encabezado_titulo.php'; ?>
 
-<div class="px-4 py-5 my-5 text-center">
+<div class="px-4 py-5 my-5 text-center pt-5">
  <img src="fotos/logo.jpeg" alt="" width="72" height="72">
  <h1 class="display-5 fw-bold text-body-emphasis">Selecciona qui ets</h1>
  <div class="col-lg-6 mx-auto">
-     <p class="lead mb-4">Una vegada seleccionis qui ets t'enredigirem a un altre pagina on podras seleccionar el que pots fer</p> 
+     <p class="lead mb-4">Una vegada seleccionis qui ets t'en redigirem a un altre pagina on podras seleccionar el que pots fer</p> 
 </div> 
 </div>
 <div class="container mt-5">
@@ -35,7 +35,7 @@
 
         <a href="t_que_vols_fer.php"
            class="btn btn-outline-primary text-start">
-          Tecnic
+          Tècnic
         </a>
 
         <a href="a_que_vols_fer.php"

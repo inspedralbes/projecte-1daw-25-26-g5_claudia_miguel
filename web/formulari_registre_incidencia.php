@@ -7,10 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <a href="u_que_vols_fer.php" class="btn btn-secondary rounded-0 btn-sm">
+  <?php include 'encabezado_titulo.php'; ?>
+  <a href="u_que_vols_fer.php" class="btn btn-dark text-white rounded-0 btn-sm">
   Tornar enrere
-  </a>
+    </a>
 
    <div class="container">
     <div class="mx-auto">

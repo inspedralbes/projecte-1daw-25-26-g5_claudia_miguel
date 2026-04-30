@@ -7,6 +7,9 @@
 </head>
 <body>
     <?php include 'encabezado_titulo.php'; ?>
+    <a href="index.php" class="btn btn-dark text-white rounded-0 btn-sm">
+     Tornar enrere
+    </a>
     <div class="px-4 py-5 my-5 text-center">
  <img src="fotos/logo.jpeg" alt="" width="72" height="72">
  <h1 class="display-5 fw-bold text-body-emphasis">Hola Administrador!</h1>

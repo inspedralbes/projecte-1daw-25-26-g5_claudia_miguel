@@ -8,8 +8,8 @@ $mysqli = include_once "conexio.php";
  * 'ORDER BY' serveix per mostrar les incidències més recents primer.
  */
 $sql = "SELECT i.id_incidencia, i.descripcio, i.data_inici, i.prioritat, i.resolta, d.nom_departament 
-        FROM INCIDENCIA i 
-        INNER JOIN DEPARTAMENT d ON i.id_departament = d.id_departament 
+        FROM INCIDENCIA i, DEPARTAMENT d WHERE i.resolta = 0
+        AND i.id_departament=d.id_departament 
         ORDER BY i.data_inici DESC";
 
 /**
@@ -34,6 +34,7 @@ include_once "encabezado_titulo.php";
                 <th>Descripció</th>
                 <th>Data</th>
                 <th>Prioritat</th>
+                <th>Acció</th>
             </tr>
         </thead>
         <tbody>
@@ -44,6 +45,13 @@ include_once "encabezado_titulo.php";
                 <td><?php echo $inc["descripcio"]; ?></td>
                 <td><?php echo $inc["data_inici"]; ?></td>
                 <td><?php echo $inc["prioritat"]; ?></td>
+                <td>
+                    <button class="btn btn-primary btn-sm btn-modificar"
+                    data-id="<?php echo $inc['id_incidencia']; ?>"
+                    data-prioritat="<?php echo $inc['prioritat']; ?>">
+                    Modificar
+                    </button>
+                </td>
             </tr>
             <?php endforeach; ?>
         </tbody>

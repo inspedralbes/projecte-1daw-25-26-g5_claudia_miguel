@@ -7,6 +7,7 @@ $mysqli = include_once "conexio.php";
  * Fem un 'INNER JOIN' amb la taula DEPARTAMENT per canviar l'ID numèric pel nom real del departament.
  * 'ORDER BY' serveix per mostrar les incidències més recents primer.
  */
+
 $sql = "SELECT i.id_incidencia, i.descripcio, i.data_inici, i.prioritat, i.resolta, d.nom_departament 
         FROM INCIDENCIA i, DEPARTAMENT d WHERE i.resolta = 0
         AND i.id_departament=d.id_departament 
@@ -24,6 +25,9 @@ $tipus = $mysqli->query("SELECT id_tipus, nom_tipus FROM TIPUS ORDER BY nom_tipu
 
 include_once "encabezado_titulo.php"; 
 ?>
+<a href="ri_que_vols_fer.php" class="btn btn-dark text-white rounded-0 btn-sm">
+  Tornar enrere
+</a>
 
 <div class="container mt-5">
     <h1>Llistat d'Incidències</h1>
@@ -40,9 +44,9 @@ include_once "encabezado_titulo.php";
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($incidencies as $inc): ?>
+            <?php $comptador = 1; foreach ($incidencies as $inc): ?>
             <tr>
-                <td><?php echo $inc["id_incidencia"]; ?></td>
+                <td><?php echo $comptador++; ?></td>
                 <td><?php echo $inc["nom_departament"]; ?></td>
                 <td><?php echo $inc["descripcio"]; ?></td>
                 <td><?php echo $inc["data_inici"]; ?></td>

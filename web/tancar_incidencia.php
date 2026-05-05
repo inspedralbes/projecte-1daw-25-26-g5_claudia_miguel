@@ -10,14 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             WHERE id_incidencia = $id";
 
     if ($mysqli->query($sql)) {
-        header("Location: gestionarIncidencia.php?ok=1");
+        header("Location: t_gestionar_incidencia.php?ok=1");
         exit;
     } else {
-        header("Location: gestionarIncidencia.php?error=1");
+        header("Location: t_gestionar_incidencia.php?error=1");
         exit;
     }
 }
 
-header("Location: gestionarIncidencia.php");
+header("Location: t_gestionar_incidencia.php");
 exit;
 ?>

@@ -18,7 +18,10 @@
       <a href="formulari_registre_incidencia.html">
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Registrar Actuacions</button>
     </a>
-      <button type="button" class="btn btn-primary btn-lg px-4">Informe Tecnic</button> 
+    <a href="t_gestionar_incidencia.php">
+        <button type="button" class="btn btn-primary btn-lg px-4">Informe Tecnic</button> 
+    </a>
+
 </div> 
 </div>
     <?php include 'pie.php'; ?>
